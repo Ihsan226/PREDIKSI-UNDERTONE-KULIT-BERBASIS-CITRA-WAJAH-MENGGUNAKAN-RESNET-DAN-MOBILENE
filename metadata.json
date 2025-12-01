@@ -1,0 +1,10 @@
+{
+  "source": "archive\\train",
+  "prepared": "prepared",
+  "total": 1500,
+  "val_total": 300,
+  "image_size": [
+    128,
+    128
+  ]
+}
