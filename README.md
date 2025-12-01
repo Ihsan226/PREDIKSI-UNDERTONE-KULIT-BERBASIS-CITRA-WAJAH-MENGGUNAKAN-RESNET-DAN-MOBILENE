@@ -45,6 +45,19 @@ Then open http://127.0.0.1:8000 in your browser. You can:
 - Klik contoh dari validation set.
 - Lihat grafik training history dan confusion matrix.
 
+### Django Alternative
+
+You can also run a Django version of the web app:
+
+```
+pip install -r requirements.txt
+cd django_app
+python manage.py migrate
+python manage.py runserver
+```
+
+Open http://127.0.0.1:8000 — features mirror the FastAPI UI (upload, samples, charts). The Django app reuses the trained model saved in `models/` and the artifacts in `prepared/` and `reports/`.
+
 ## CRISP-DM Phases Covered
 - Business Understanding: Goal and success criteria.
 - Data Understanding: Class counts, image sizes, sample grid.
